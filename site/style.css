@@ -1,0 +1,169 @@
+/* Charte de todis.eu : les sept variables de website/style.css du depot
+   eudiw, recopiees et non referencees. Aucune police telechargee, aucune
+   ressource externe : cette page doit rester lisible quand todis.eu ne
+   repond plus. */
+:root {
+  color-scheme: dark;
+  --bg: #0b0e14;
+  --bg-alt: #131826;
+  --fg: #e8ecf4;
+  --fg-muted: #9aa4b8;
+  --accent: #4f8cff;
+  --accent-2: #7c5cff;
+  --border: #232a3b;
+
+  --operationnel: #3fb68b;
+  --perturbe: #e5a93b;
+  --panne: #e5534b;
+  --inconnu: #3a4460;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.55;
+}
+
+:where(a, a:visited) { color: var(--accent); }
+
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.entete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+  color: var(--fg);
+  text-decoration: none;
+}
+.brand:visited { color: var(--fg); }
+.brand-mark { flex-shrink: 0; width: 30px; height: 30px; }
+
+.langues { display: flex; gap: 0.75rem; font-size: 0.95rem; }
+.langues a { color: var(--fg-muted); text-decoration: none; }
+.langues a[aria-current="page"] { color: var(--fg); font-weight: 600; }
+
+h1 {
+  margin: 2rem 0 1rem;
+  font-size: 1.9rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h2 { font-size: 1.15rem; margin: 2.5rem 0 1rem; }
+
+.bandeau {
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: 1px solid var(--border);
+  background: var(--bg-alt);
+}
+.bandeau.operationnel { background: color-mix(in srgb, var(--operationnel) 22%, var(--bg)); border-color: var(--operationnel); }
+.bandeau.panne { background: color-mix(in srgb, var(--panne) 22%, var(--bg)); border-color: var(--panne); }
+.bandeau.perime,
+.bandeau.indisponible { background: color-mix(in srgb, var(--perturbe) 18%, var(--bg)); border-color: var(--perturbe); }
+
+.releve { color: var(--fg-muted); font-size: 0.9rem; margin: 0.5rem 0 0; min-height: 1.4em; }
+
+.plateforme {
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.tete {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+.tete h3 { margin: 0; font-size: 1.1rem; }
+.description { margin: 0.15rem 0 0; color: var(--fg-muted); font-size: 0.9rem; }
+
+.etat { margin: 0; font-weight: 600; font-size: 0.95rem; white-space: nowrap; }
+.etat.operationnel { color: var(--operationnel); }
+.etat.panne { color: var(--panne); white-space: normal; text-align: right; }
+.etat.inconnu { color: var(--fg-muted); }
+
+.barres { display: flex; gap: 4px; height: 36px; }
+.barre {
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  background: var(--inconnu);
+}
+.barre.operationnel { background: var(--operationnel); }
+.barre.perturbe { background: var(--perturbe); }
+.barre.panne { background: var(--panne); }
+.barre:hover { opacity: 0.8; }
+.barre:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
+
+.pied {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  color: var(--fg-muted);
+  font-size: 0.85rem;
+}
+.pied .dispo { color: var(--fg); text-align: center; }
+
+.detail { margin: 0.75rem 0 0; color: var(--fg-muted); font-size: 0.9rem; min-height: 1.4em; }
+
+.legende {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  list-style: none;
+  color: var(--fg-muted);
+  font-size: 0.9rem;
+}
+.legende li { display: flex; align-items: center; gap: 0.4rem; }
+.pastille { display: inline-block; width: 12px; height: 12px; border-radius: 3px; background: var(--inconnu); }
+.pastille.operationnel { background: var(--operationnel); }
+.pastille.perturbe { background: var(--perturbe); }
+.pastille.panne { background: var(--panne); }
+
+.methode p { color: var(--fg-muted); max-width: 46rem; }
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  color: var(--fg-muted);
+  font-size: 0.9rem;
+}
+footer p { margin: 0; }
+
+@media (max-width: 520px) {
+  .barres { gap: 2px; height: 30px; }
+  .tete { flex-direction: column; gap: 0.4rem; }
+  .etat.panne { text-align: left; }
+}

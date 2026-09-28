@@ -1,0 +1,51 @@
+# Publie site/ sur GitHub Pages (status.todis.eu) quand la page change.
+#
+# Les releves ne passent pas par ici : la page lit status.json sur la
+# branche releves, par raw.githubusercontent.com. Pages ne se redeploie
+# donc pas toutes les cinq minutes.
+name: Page
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "tests/**"
+      - "bancs.sh"
+      - ".github/workflows/page.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Bancs
+        run: sh bancs.sh
+
+      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: site
+
+      - id: deploiement
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

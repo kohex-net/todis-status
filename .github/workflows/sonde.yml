@@ -1,0 +1,59 @@
+# Mesure les plateformes Todis et publie status.json sur la branche releves.
+#
+# Runner heberge par GitHub, jamais un runner auto-heberge : la mesure ne
+# doit dependre d'aucune machine de Todis ni de Kohex. C'est la raison
+# d'etre de ce depot (decision 0159 du depot eudiw).
+#
+# Le cron de GitHub est au mieux : des passages arrivent en retard ou
+# sautent. agrege.py en tient compte (plafond d'intervalle, couverture).
+name: Sonde
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sonde
+  cancel-in-progress: false
+
+jobs:
+  sonder:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      # Avant de mesurer : un banc rouge ne publie aucun releve, et la
+      # page affiche alors "donnees perimees" plutot qu'un chiffre faux.
+      - name: Bancs
+        run: sh bancs.sh
+
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: releves
+          path: donnees
+
+      - name: Sonde
+        run: python3 sonde.py plateformes.json donnees/releves
+
+      - name: Agregation
+        run: python3 agrege.py plateformes.json donnees/releves donnees/status.json
+
+      - name: Publication du releve
+        working-directory: donnees
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add releves status.json
+          git commit -q -m "Releve du $(date -u +%Y-%m-%dT%H:%MZ)"
+          for _ in 1 2 3; do
+            if git push -q origin HEAD:releves; then exit 0; fi
+            git pull -q --rebase origin releves
+          done
+          exit 1

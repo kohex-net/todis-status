@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src https://raw.githubusercontent.com; base-uri 'none'; form-action 'none'">
+<title>Todis status</title>
+<meta name="description" content="Uptime of the Todis platforms over the last fifteen days, measured outside the Todis infrastructure.">
+<link rel="canonical" href="https://status.todis.eu/en/">
+<link rel="alternate" hreflang="fr" href="https://status.todis.eu/">
+<link rel="alternate" hreflang="en" href="https://status.todis.eu/en/">
+<link rel="alternate" hreflang="es" href="https://status.todis.eu/es/">
+<link rel="alternate" hreflang="x-default" href="https://status.todis.eu/en/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l7 3v6c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V5l7-3z' fill='%234f8cff'/%3E%3Cpath d='M8.5 12.5l2.5 2.5 4.5-5' stroke='white' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../style.css">
+<script type="module" src="../status.js"></script>
+</head>
+<body>
+<div class="page">
+
+  <header class="entete">
+    <a class="brand" href="https://www.todis.eu/en/">
+      <svg class="brand-mark" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 2l7 3v6c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V5l7-3z" fill="var(--accent)" opacity="0.18"/>
+        <path d="M12 2l7 3v6c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V5l7-3z" stroke="var(--accent)" stroke-width="1.5"/>
+        <path d="M8.5 12.5l2.5 2.5 4.5-5" stroke="var(--accent)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Todis</span>
+    </a>
+    <nav class="langues" aria-label="Language">
+      <a href="../" lang="fr">FR</a>
+      <a href="./" aria-current="page" lang="en">EN</a>
+      <a href="../es/" lang="es">ES</a>
+    </nav>
+  </header>
+
+  <h1>Service status</h1>
+
+  <div id="bandeau" class="bandeau chargement" role="status" aria-live="polite">Loading measurements…</div>
+  <p id="releve" class="releve"></p>
+
+  <section class="disponibilite" aria-labelledby="titre-disponibilite">
+    <h2 id="titre-disponibilite">Uptime over fifteen days</h2>
+    <div id="plateformes"></div>
+    <ul class="legende">
+      <li><span class="pastille operationnel"></span>Operational</li>
+      <li><span class="pastille perturbe"></span>Disruption, uptime of at least 99%</li>
+      <li><span class="pastille panne"></span>Outage, uptime below 99%</li>
+      <li><span class="pastille inconnu"></span>Not measured</li>
+    </ul>
+  </section>
+
+  <section class="methode" aria-labelledby="titre-methode">
+    <h2 id="titre-methode">How it is measured</h2>
+    <p>Roughly every five minutes, a program hosted by GitHub, outside the Todis infrastructure, queries the public addresses of each platform: the version of the verification service, its trust registry, which must hold at least one anchor, and its public pages.</p>
+    <p>A platform is operational when all of these addresses answer as expected. This does not guarantee that a verification succeeds end to end.</p>
+    <p>An address only counts as failing after a second attempt, and never when the measuring program itself could no longer reach the Internet. Days follow Paris time. A grey day was not measured enough for its uptime to be stated.</p>
+  </section>
+
+  <footer>
+    <p><a href="https://www.todis.eu/en/">Todis</a>, a Kohex product. Raw measurements and measuring code: <a href="https://github.com/kohex-net/todis-status">public repository</a>.</p>
+  </footer>
+
+</div>
+</body>
+</html>

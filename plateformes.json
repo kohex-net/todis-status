@@ -1,0 +1,40 @@
+{
+  "fuseau": "Europe/Paris",
+  "jours": 15,
+  "plafond_intervalle_min": 15,
+  "temoins": [
+    "https://www.google.com/generate_204",
+    "https://www.cloudflare.com/cdn-cgi/trace"
+  ],
+  "plateformes": [
+    {
+      "id": "production",
+      "nom": { "fr": "Production", "en": "Production", "es": "Producción" },
+      "description": {
+        "fr": "API de vérification, site et souscription",
+        "en": "Verification API, website and sign-up",
+        "es": "API de verificación, sitio web y suscripción"
+      },
+      "sondes": [
+        { "nom": "api", "url": "https://verify.todis.eu/version", "attendu": "version" },
+        { "nom": "registre", "url": "https://todis.eu/trust/registries", "attendu": "registre" },
+        { "nom": "site", "url": "https://todis.eu/", "attendu": "html" },
+        { "nom": "souscription", "url": "https://todis.eu/pricing", "attendu": "json" }
+      ]
+    },
+    {
+      "id": "integration",
+      "nom": { "fr": "Intégration", "en": "Integration", "es": "Integración" },
+      "description": {
+        "fr": "Environnement d'essai sur registres de test",
+        "en": "Test environment on test trust registries",
+        "es": "Entorno de pruebas con registros de prueba"
+      },
+      "sondes": [
+        { "nom": "api", "url": "https://integration.todis.eu/version", "attendu": "version" },
+        { "nom": "registre", "url": "https://integration.todis.eu/trust/registries", "attendu": "registre" },
+        { "nom": "accueil", "url": "https://integration.todis.eu/", "attendu": "html" }
+      ]
+    }
+  ]
+}
