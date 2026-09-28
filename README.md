@@ -8,6 +8,20 @@ Elle mesure depuis l'extérieur : un workflow GitHub Actions, sur un runner héb
 
 Le `cron` de GitHub ne tient pas cinq minutes : mesuré le 2026-09-28 sur une douzaine de dépôts réglés en `*/5`, il ne déclenche qu'environ toutes les 3 à 7 heures. Une fonction Scaleway programmée, `declencheur/handler.py`, demande donc un passage du workflow `Sonde` toutes les cinq minutes par l'API de GitHub. Elle est privée, et son jeton GitHub ne donne que le droit Actions sur ce dépôt. Le `cron` de GitHub reste déclaré, en appoint.
 
+Chez Scaleway, région `fr-par`, projet par défaut du compte de production :
+
+- espace de noms `todis-status` ;
+- fonction `declencheur` : Python 3.12, `handler.handle`, privée, 128 Mo, secret `GITHUB_TOKEN` ;
+- cron `sonde-toutes-les-5-min`, `*/5 * * * *`.
+
+Redéployer après une modification de `declencheur/handler.py` : zipper le seul `handler.py` à la racine de l'archive, puis
+
+```sh
+scw function deploy namespace-id=<id de todis-status> name=declencheur runtime=python312 zip-file=declencheur.zip
+```
+
+Remplacer le jeton : `scw function function update <id de declencheur> secret-environment-variables.0.key=GITHUB_TOKEN secret-environment-variables.0.value=<jeton>`, lancé sans écho. Le jeton est un jeton à grain fin du compte `kohex-net`, limité à ce dépôt et au droit Actions en écriture.
+
 ## Ce qui est mesuré
 
 `plateformes.json` déclare les plateformes et leurs sondes. Une plateforme est opérationnelle quand toutes ses sondes répondent comme attendu :
