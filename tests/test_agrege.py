@@ -238,6 +238,14 @@ class Synthese(unittest.TestCase):
         self.assertEqual(plateforme(res, "production")["disponibilite"], round(1 - 30 / mesure, 6))
         self.assertEqual(plateforme(res, "integration")["disponibilite"], 1.0)
 
+    def test_pas_de_disponibilite_sur_la_periode_tant_que_tous_les_jours_sont_gris(self):
+        # Quelques minutes de mesure ne font pas « 100 % sur quinze jours ».
+        releves = serie(MAINTENANT - timedelta(minutes=20), MAINTENANT)
+        res = agrege.agreger(CONFIG, releves, MAINTENANT)
+        self.assertEqual({j["statut"] for j in plateforme(res, "production")["jours"]}, {"inconnu"})
+        self.assertIsNone(plateforme(res, "production")["disponibilite"])
+        self.assertEqual(plateforme(res, "production")["etat"]["statut"], "operationnel")
+
     def test_etat_courant_en_panne_depuis_le_premier_echec(self):
         panne = MAINTENANT - timedelta(minutes=15)
         releves = en_panne(serie(DEBUT_27, MAINTENANT), panne, MAINTENANT, sonde="registre")

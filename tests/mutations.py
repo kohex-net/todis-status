@@ -23,6 +23,7 @@ MUTATIONS = [
     ("agrege.py", '"perturbe" if dispo >= SEUIL_PANNE else "panne"', '"panne" if dispo >= SEUIL_PANNE else "perturbe"', "seuils inverses"),
     ("agrege.py", "if d == jours[-1]:", "if False:", "aujourd'hui sur 24 h"),
     ("agrege.py", "d = t.astimezone(fuseau).date()", "d = t.date()", "jours en UTC"),
+    ("agrege.py", 'if mesure_totale and any(j["statut"] != "inconnu" for j in sortie_jours)', "if mesure_totale", "chiffre sur jours gris"),
     ("sonde.py", "if any(causes.values()):", "if False:", "pas de rejeu"),
     ("sonde.py", "temoin = any(", "temoin = all(", "temoin exige tous"),
     ("sonde.py", "return None if ancres > 0 else", "return None if ancres >= 0 else", "registre vide accepte"),

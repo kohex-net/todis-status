@@ -37,7 +37,7 @@ Une plateforme n'entre dans `plateformes.json` que le jour où elle existe et se
 | Opérationnel | aucun échec, au moins la moitié du jour mesurée |
 | Non mesuré | aucun échec, moins de la moitié du jour mesurée |
 
-Un échec mesuré se montre toujours, même sur un jour peu couvert.
+Un échec mesuré se montre toujours, même sur un jour peu couvert. La disponibilité sur quinze jours ne s'affiche pas tant que tous les jours sont « Non mesuré ».
 
 ## Bancs
 

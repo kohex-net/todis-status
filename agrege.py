@@ -155,7 +155,11 @@ def agreger(config, releves, maintenant):
                 "id": pid,
                 "nom": p["nom"],
                 "description": p["description"],
-                "disponibilite": round(1 - panne_totale / mesure_totale, 6) if mesure_totale else None,
+                # Aucun chiffre tant que tous les jours sont gris : quelques
+                # minutes de mesure ne font pas une disponibilite sur la periode.
+                "disponibilite": round(1 - panne_totale / mesure_totale, 6)
+                if mesure_totale and any(j["statut"] != "inconnu" for j in sortie_jours)
+                else None,
                 "etat": etat,
                 "jours": sortie_jours,
             }
