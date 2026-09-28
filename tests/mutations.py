@@ -27,6 +27,8 @@ MUTATIONS = [
     ("sonde.py", "if any(causes.values()):", "if False:", "pas de rejeu"),
     ("sonde.py", "temoin = any(", "temoin = all(", "temoin exige tous"),
     ("sonde.py", "return None if ancres > 0 else", "return None if ancres >= 0 else", "registre vide accepte"),
+    ("declencheur/handler.py", "200 if code == 204 else 502", "200", "echec de GitHub masque"),
+    ("declencheur/handler.py", 'if not jeton:', 'if False:', "envoi sans jeton"),
     ("site/status.js", "Math.floor(x * 10000 + 1e-9)", "Math.round(x * 10000)", "pourcentage arrondi"),
     ("site/status.js", "PEREMPTION_MIN * 60 * 1000", "PEREMPTION_MIN * 60 * 10000", "peremption decuplee"),
 ]

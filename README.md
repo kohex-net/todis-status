@@ -4,6 +4,10 @@ Page de statut des plateformes Todis, publiée sur <https://status.todis.eu>.
 
 Elle mesure depuis l'extérieur : un workflow GitHub Actions, sur un runner hébergé par GitHub, interroge toutes les cinq minutes environ les adresses publiques de chaque plateforme. Rien ici ne dépend d'une machine de Todis ou de Kohex, et la page reste en ligne quand les plateformes ne le sont plus. Décision 0159 du dépôt `eudiw`.
 
+## Ce qui déclenche la mesure
+
+Le `cron` de GitHub ne tient pas cinq minutes : mesuré le 2026-09-28 sur une douzaine de dépôts réglés en `*/5`, il ne déclenche qu'environ toutes les 3 à 7 heures. Une fonction Scaleway programmée, `declencheur/handler.py`, demande donc un passage du workflow `Sonde` toutes les cinq minutes par l'API de GitHub. Elle est privée, et son jeton GitHub ne donne que le droit Actions sur ce dépôt. Le `cron` de GitHub reste déclaré, en appoint.
+
 ## Ce qui est mesuré
 
 `plateformes.json` déclare les plateformes et leurs sondes. Une plateforme est opérationnelle quand toutes ses sondes répondent comme attendu :
