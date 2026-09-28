@@ -6,11 +6,13 @@
 #
 # Le cron de GitHub est au mieux : des passages arrivent en retard ou
 # sautent. agrege.py en tient compte (plafond d'intervalle, couverture).
+# Decale de trois minutes : GitHub dit ses crons surcharges en haut de
+# l'heure et sur les multiples ronds.
 name: Sonde
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "3-58/5 * * * *"
   workflow_dispatch:
 
 permissions:
