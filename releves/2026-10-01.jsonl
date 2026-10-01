@@ -166,3 +166,4 @@
 {"plateformes": {"integration": {"echecs": [], "ok": true}, "production": {"echecs": [], "ok": true}}, "t": "2026-10-01T13:35:21Z", "temoin": true}
 {"plateformes": {"integration": {"echecs": [], "ok": true}, "production": {"echecs": [], "ok": true}}, "t": "2026-10-01T13:40:19Z", "temoin": true}
 {"plateformes": {"integration": {"echecs": [], "ok": true}, "production": {"echecs": [{"cause": "injoignable (URLError)", "sonde": "api"}], "ok": false}}, "t": "2026-10-01T13:45:22Z", "temoin": true}
+{"plateformes": {"integration": {"echecs": [], "ok": true}, "production": {"echecs": [], "ok": true}}, "t": "2026-10-01T13:50:13Z", "temoin": true}
