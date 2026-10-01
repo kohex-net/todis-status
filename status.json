@@ -1,9 +1,8 @@
 {
- "genere_a": "2026-10-01T21:55:19Z",
- "dernier_releve": "2026-10-01T21:55:15Z",
+ "genere_a": "2026-10-01T22:00:21Z",
+ "dernier_releve": "2026-10-01T22:00:13Z",
  "fuseau": "Europe/Paris",
  "jours": [
-  "2026-09-17",
   "2026-09-18",
   "2026-09-19",
   "2026-09-20",
@@ -17,7 +16,8 @@
   "2026-09-28",
   "2026-09-29",
   "2026-09-30",
-  "2026-10-01"
+  "2026-10-01",
+  "2026-10-02"
  ],
  "plateformes": [
   {
@@ -32,22 +32,14 @@
     "en": "Verification API, website and sign-up",
     "es": "API de verificación, sitio web y suscripción"
    },
-   "disponibilite": 0.998942,
+   "disponibilite": 0.998943,
    "etat": {
     "statut": "operationnel",
     "depuis": "2026-10-01T13:50:13Z",
-    "releve": "2026-10-01T21:55:15Z",
+    "releve": "2026-10-01T22:00:13Z",
     "sondes_en_echec": []
    },
    "jours": [
-    {
-     "date": "2026-09-17",
-     "statut": "inconnu",
-     "disponibilite": null,
-     "minutes_panne": 0,
-     "couverture": 0.0,
-     "sondes_en_echec": []
-    },
     {
      "date": "2026-09-18",
      "statut": "inconnu",
@@ -155,12 +147,20 @@
     {
      "date": "2026-10-01",
      "statut": "perturbe",
-     "disponibilite": 0.996621,
+     "disponibilite": 0.996632,
      "minutes_panne": 5,
      "couverture": 1.0,
      "sondes_en_echec": [
       "api"
      ]
+    },
+    {
+     "date": "2026-10-02",
+     "statut": "inconnu",
+     "disponibilite": 1.0,
+     "minutes_panne": 0,
+     "couverture": 0.133,
+     "sondes_en_echec": []
     }
    ]
   },
@@ -180,18 +180,10 @@
    "etat": {
     "statut": "operationnel",
     "depuis": "2026-09-28T12:46:30Z",
-    "releve": "2026-10-01T21:55:15Z",
+    "releve": "2026-10-01T22:00:13Z",
     "sondes_en_echec": []
    },
    "jours": [
-    {
-     "date": "2026-09-17",
-     "statut": "inconnu",
-     "disponibilite": null,
-     "minutes_panne": 0,
-     "couverture": 0.0,
-     "sondes_en_echec": []
-    },
     {
      "date": "2026-09-18",
      "statut": "inconnu",
@@ -302,6 +294,14 @@
      "disponibilite": 1.0,
      "minutes_panne": 0,
      "couverture": 1.0,
+     "sondes_en_echec": []
+    },
+    {
+     "date": "2026-10-02",
+     "statut": "inconnu",
+     "disponibilite": 1.0,
+     "minutes_panne": 0,
+     "couverture": 0.133,
      "sondes_en_echec": []
     }
    ]
