@@ -1,6 +1,6 @@
 {
- "genere_a": "2026-10-10T05:55:19Z",
- "dernier_releve": "2026-10-10T05:55:13Z",
+ "genere_a": "2026-10-10T06:00:16Z",
+ "dernier_releve": "2026-10-10T06:00:11Z",
  "fuseau": "Europe/Paris",
  "jours": [
   "2026-09-26",
@@ -32,11 +32,11 @@
     "en": "Verification API, website and sign-up",
     "es": "API de verificación, sitio web y suscripción"
    },
-   "disponibilite": 0.999412,
+   "disponibilite": 0.999413,
    "etat": {
     "statut": "operationnel",
     "depuis": "2026-10-07T07:55:12Z",
-    "releve": "2026-10-10T05:55:13Z",
+    "releve": "2026-10-10T06:00:11Z",
     "sondes_en_echec": []
    },
    "jours": [
@@ -185,7 +185,7 @@
    "etat": {
     "statut": "operationnel",
     "depuis": "2026-10-07T07:55:12Z",
-    "releve": "2026-10-10T05:55:13Z",
+    "releve": "2026-10-10T06:00:11Z",
     "sondes_en_echec": []
    },
    "jours": [
