@@ -1,6 +1,6 @@
 {
- "genere_a": "2026-10-15T17:45:18Z",
- "dernier_releve": "2026-10-15T17:45:14Z",
+ "genere_a": "2026-10-15T17:50:20Z",
+ "dernier_releve": "2026-10-15T17:50:15Z",
  "fuseau": "Europe/Paris",
  "jours": [
   "2026-10-01",
@@ -36,7 +36,7 @@
    "etat": {
     "statut": "operationnel",
     "depuis": "2026-10-07T07:55:12Z",
-    "releve": "2026-10-15T17:45:14Z",
+    "releve": "2026-10-15T17:50:15Z",
     "sondes_en_echec": []
    },
    "jours": [
@@ -181,11 +181,11 @@
     "en": "Test environment on test trust registries",
     "es": "Entorno de pruebas con registros de prueba"
    },
-   "disponibilite": 0.999771,
+   "disponibilite": 0.999772,
    "etat": {
     "statut": "operationnel",
     "depuis": "2026-10-07T07:55:12Z",
-    "releve": "2026-10-15T17:45:14Z",
+    "releve": "2026-10-15T17:50:15Z",
     "sondes_en_echec": []
    },
    "jours": [
