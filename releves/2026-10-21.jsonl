@@ -98,3 +98,4 @@
 {"plateformes": {"integration": {"echecs": [{"cause": "injoignable (TimeoutError)", "sonde": "registre"}], "ok": false}, "production": {"echecs": [{"cause": "injoignable (TimeoutError)", "sonde": "registre"}], "ok": false}}, "t": "2026-10-21T07:55:11Z", "temoin": true}
 {"plateformes": {"integration": {"echecs": [{"cause": "injoignable (TimeoutError)", "sonde": "registre"}], "ok": false}, "production": {"echecs": [{"cause": "injoignable (TimeoutError)", "sonde": "registre"}], "ok": false}}, "t": "2026-10-21T08:00:18Z", "temoin": true}
 {"plateformes": {"integration": {"echecs": [{"cause": "injoignable (TimeoutError)", "sonde": "registre"}], "ok": false}, "production": {"echecs": [{"cause": "injoignable (TimeoutError)", "sonde": "registre"}], "ok": false}}, "t": "2026-10-21T08:05:14Z", "temoin": true}
+{"plateformes": {"integration": {"echecs": [], "ok": true}, "production": {"echecs": [], "ok": true}}, "t": "2026-10-21T08:10:12Z", "temoin": true}
