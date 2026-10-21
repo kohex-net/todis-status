@@ -1,6 +1,6 @@
 {
- "genere_a": "2026-10-21T02:11:18Z",
- "dernier_releve": "2026-10-21T02:10:11Z",
+ "genere_a": "2026-10-21T02:15:29Z",
+ "dernier_releve": "2026-10-21T02:15:19Z",
  "fuseau": "Europe/Paris",
  "jours": [
   "2026-10-07",
@@ -32,14 +32,12 @@
     "en": "Verification API, website and sign-up",
     "es": "API de verificación, sitio web y suscripción"
    },
-   "disponibilite": 0.999707,
+   "disponibilite": 0.99951,
    "etat": {
-    "statut": "panne",
-    "depuis": "2026-10-21T02:10:11Z",
-    "releve": "2026-10-21T02:10:11Z",
-    "sondes_en_echec": [
-     "registre"
-    ]
+    "statut": "operationnel",
+    "depuis": "2026-10-21T02:15:19Z",
+    "releve": "2026-10-21T02:15:19Z",
+    "sondes_en_echec": []
    },
    "jours": [
     {
@@ -161,9 +159,9 @@
     },
     {
      "date": "2026-10-21",
-     "statut": "perturbe",
-     "disponibilite": 0.995553,
-     "minutes_panne": 1,
+     "statut": "panne",
+     "disponibilite": 0.979892,
+     "minutes_panne": 5,
      "couverture": 0.999,
      "sondes_en_echec": [
       "registre"
@@ -183,14 +181,12 @@
     "en": "Test environment on test trust registries",
     "es": "Entorno de pruebas con registros de prueba"
    },
-   "disponibilite": 0.999707,
+   "disponibilite": 0.99951,
    "etat": {
-    "statut": "panne",
-    "depuis": "2026-10-21T02:10:11Z",
-    "releve": "2026-10-21T02:10:11Z",
-    "sondes_en_echec": [
-     "registre"
-    ]
+    "statut": "operationnel",
+    "depuis": "2026-10-21T02:15:19Z",
+    "releve": "2026-10-21T02:15:19Z",
+    "sondes_en_echec": []
    },
    "jours": [
     {
@@ -311,9 +307,9 @@
     },
     {
      "date": "2026-10-21",
-     "statut": "perturbe",
-     "disponibilite": 0.995553,
-     "minutes_panne": 1,
+     "statut": "panne",
+     "disponibilite": 0.979892,
+     "minutes_panne": 5,
      "couverture": 0.999,
      "sondes_en_echec": [
       "registre"
