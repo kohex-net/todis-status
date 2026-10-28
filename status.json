@@ -1,6 +1,6 @@
 {
- "genere_a": "2026-10-28T08:50:16Z",
- "dernier_releve": "2026-10-28T08:50:12Z",
+ "genere_a": "2026-10-28T08:55:17Z",
+ "dernier_releve": "2026-10-28T08:55:12Z",
  "fuseau": "Europe/Paris",
  "jours": [
   "2026-10-14",
@@ -32,11 +32,11 @@
     "en": "Verification API, website and sign-up",
     "es": "API de verificación, sitio web y suscripción"
    },
-   "disponibilite": 0.995202,
+   "disponibilite": 0.995203,
    "etat": {
     "statut": "operationnel",
     "depuis": "2026-10-21T08:10:12Z",
-    "releve": "2026-10-28T08:50:12Z",
+    "releve": "2026-10-28T08:55:12Z",
     "sondes_en_echec": []
    },
    "jours": [
@@ -176,11 +176,11 @@
     "en": "Test environment on test trust registries",
     "es": "Entorno de pruebas con registros de prueba"
    },
-   "disponibilite": 0.993505,
+   "disponibilite": 0.993506,
    "etat": {
     "statut": "operationnel",
     "depuis": "2026-10-21T08:10:12Z",
-    "releve": "2026-10-28T08:50:12Z",
+    "releve": "2026-10-28T08:55:12Z",
     "sondes_en_echec": []
    },
    "jours": [
