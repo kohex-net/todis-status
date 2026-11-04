@@ -1,6 +1,6 @@
 {
- "genere_a": "2026-11-04T23:45:25Z",
- "dernier_releve": "2026-11-04T23:45:21Z",
+ "genere_a": "2026-11-04T23:50:58Z",
+ "dernier_releve": "2026-11-04T23:50:12Z",
  "fuseau": "Europe/Paris",
  "jours": [
   "2026-10-22",
@@ -32,12 +32,14 @@
     "en": "Verification API, website and sign-up",
     "es": "API de verificación, sitio web y suscripción"
    },
-   "disponibilite": 1.0,
+   "disponibilite": 0.999962,
    "etat": {
-    "statut": "operationnel",
-    "depuis": "2026-10-21T08:10:12Z",
-    "releve": "2026-11-04T23:45:21Z",
-    "sondes_en_echec": []
+    "statut": "panne",
+    "depuis": "2026-11-04T23:50:12Z",
+    "releve": "2026-11-04T23:50:12Z",
+    "sondes_en_echec": [
+     "registre"
+    ]
    },
    "jours": [
     {
@@ -154,11 +156,13 @@
     },
     {
      "date": "2026-11-05",
-     "statut": "operationnel",
-     "disponibilite": 1.0,
-     "minutes_panne": 0,
-     "couverture": 0.995,
-     "sondes_en_echec": []
+     "statut": "panne",
+     "disponibilite": 0.984893,
+     "minutes_panne": 1,
+     "couverture": 0.996,
+     "sondes_en_echec": [
+      "registre"
+     ]
     }
    ]
   },
@@ -178,7 +182,7 @@
    "etat": {
     "statut": "operationnel",
     "depuis": "2026-10-21T08:10:12Z",
-    "releve": "2026-11-04T23:45:21Z",
+    "releve": "2026-11-04T23:50:12Z",
     "sondes_en_echec": []
    },
    "jours": [
@@ -299,7 +303,7 @@
      "statut": "operationnel",
      "disponibilite": 1.0,
      "minutes_panne": 0,
-     "couverture": 0.995,
+     "couverture": 0.996,
      "sondes_en_echec": []
     }
    ]
