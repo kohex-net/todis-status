@@ -1,6 +1,6 @@
 {
- "genere_a": "2026-11-05T20:15:37Z",
- "dernier_releve": "2026-11-05T20:15:11Z",
+ "genere_a": "2026-11-05T20:20:19Z",
+ "dernier_releve": "2026-11-05T20:20:14Z",
  "fuseau": "Europe/Paris",
  "jours": [
   "2026-10-22",
@@ -36,7 +36,7 @@
    "etat": {
     "statut": "operationnel",
     "depuis": "2026-11-04T23:55:21Z",
-    "releve": "2026-11-05T20:15:11Z",
+    "releve": "2026-11-05T20:20:14Z",
     "sondes_en_echec": []
    },
    "jours": [
@@ -155,7 +155,7 @@
     {
      "date": "2026-11-05",
      "statut": "perturbe",
-     "disponibilite": 0.995962,
+     "disponibilite": 0.995977,
      "minutes_panne": 5,
      "couverture": 1.0,
      "sondes_en_echec": [
@@ -176,15 +176,12 @@
     "en": "Test environment on test trust registries",
     "es": "Entorno de pruebas con registros de prueba"
    },
-   "disponibilite": 0.999284,
+   "disponibilite": 0.99907,
    "etat": {
-    "statut": "panne",
-    "depuis": "2026-11-05T20:00:14Z",
-    "releve": "2026-11-05T20:15:11Z",
-    "sondes_en_echec": [
-     "api",
-     "registre"
-    ]
+    "statut": "operationnel",
+    "depuis": "2026-11-05T20:20:14Z",
+    "releve": "2026-11-05T20:20:14Z",
+    "sondes_en_echec": []
    },
    "jours": [
     {
@@ -302,8 +299,8 @@
     {
      "date": "2026-11-05",
      "statut": "panne",
-     "disponibilite": 0.987938,
-     "minutes_panne": 15,
+     "disponibilite": 0.984376,
+     "minutes_panne": 20,
      "couverture": 1.0,
      "sondes_en_echec": [
       "api",
