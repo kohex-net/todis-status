@@ -240,3 +240,4 @@
 {"plateformes": {"integration": {"echecs": [], "ok": true}, "production": {"echecs": [], "ok": true}}, "t": "2026-11-05T19:50:11Z", "temoin": true}
 {"plateformes": {"integration": {"echecs": [], "ok": true}, "production": {"echecs": [], "ok": true}}, "t": "2026-11-05T19:55:13Z", "temoin": true}
 {"plateformes": {"integration": {"echecs": [{"cause": "HTTP 502", "sonde": "api"}, {"cause": "HTTP 502", "sonde": "registre"}], "ok": false}, "production": {"echecs": [], "ok": true}}, "t": "2026-11-05T20:00:14Z", "temoin": true}
+{"plateformes": {"integration": {"echecs": [{"cause": "HTTP 502", "sonde": "api"}, {"cause": "HTTP 502", "sonde": "registre"}], "ok": false}, "production": {"echecs": [], "ok": true}}, "t": "2026-11-05T20:05:12Z", "temoin": true}
