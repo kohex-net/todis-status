@@ -1,9 +1,8 @@
 {
- "genere_a": "2026-11-06T22:59:42Z",
- "dernier_releve": "2026-11-06T22:59:36Z",
+ "genere_a": "2026-11-06T23:00:30Z",
+ "dernier_releve": "2026-11-06T23:00:26Z",
  "fuseau": "Europe/Paris",
  "jours": [
-  "2026-10-23",
   "2026-10-24",
   "2026-10-25",
   "2026-10-26",
@@ -17,7 +16,8 @@
   "2026-11-03",
   "2026-11-04",
   "2026-11-05",
-  "2026-11-06"
+  "2026-11-06",
+  "2026-11-07"
  ],
  "plateformes": [
   {
@@ -32,22 +32,14 @@
     "en": "Verification API, website and sign-up",
     "es": "API de verificación, sitio web y suscripción"
    },
-   "disponibilite": 0.999762,
+   "disponibilite": 0.999745,
    "etat": {
     "statut": "operationnel",
     "depuis": "2026-11-04T23:55:21Z",
-    "releve": "2026-11-06T22:59:36Z",
+    "releve": "2026-11-06T23:00:26Z",
     "sondes_en_echec": []
    },
    "jours": [
-    {
-     "date": "2026-10-23",
-     "statut": "operationnel",
-     "disponibilite": 1.0,
-     "minutes_panne": 0,
-     "couverture": 1.0,
-     "sondes_en_echec": []
-    },
     {
      "date": "2026-10-24",
      "statut": "operationnel",
@@ -161,6 +153,14 @@
      "minutes_panne": 0,
      "couverture": 1.0,
      "sondes_en_echec": []
+    },
+    {
+     "date": "2026-11-07",
+     "statut": "inconnu",
+     "disponibilite": 1.0,
+     "minutes_panne": 0,
+     "couverture": 0.067,
+     "sondes_en_echec": []
     }
    ]
   },
@@ -176,22 +176,14 @@
     "en": "Test environment on test trust registries",
     "es": "Entorno de pruebas con registros de prueba"
    },
-   "disponibilite": 0.999077,
+   "disponibilite": 0.999011,
    "etat": {
     "statut": "operationnel",
     "depuis": "2026-11-05T20:20:14Z",
-    "releve": "2026-11-06T22:59:36Z",
+    "releve": "2026-11-06T23:00:26Z",
     "sondes_en_echec": []
    },
    "jours": [
-    {
-     "date": "2026-10-23",
-     "statut": "operationnel",
-     "disponibilite": 1.0,
-     "minutes_panne": 0,
-     "couverture": 1.0,
-     "sondes_en_echec": []
-    },
     {
      "date": "2026-10-24",
      "statut": "operationnel",
@@ -305,6 +297,14 @@
      "disponibilite": 1.0,
      "minutes_panne": 0,
      "couverture": 1.0,
+     "sondes_en_echec": []
+    },
+    {
+     "date": "2026-11-07",
+     "statut": "inconnu",
+     "disponibilite": 1.0,
+     "minutes_panne": 0,
+     "couverture": 0.067,
      "sondes_en_echec": []
     }
    ]
