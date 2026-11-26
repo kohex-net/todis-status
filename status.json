@@ -1,6 +1,6 @@
 {
- "genere_a": "2026-11-26T17:11:01Z",
- "dernier_releve": "2026-11-26T17:10:56Z",
+ "genere_a": "2026-11-26T17:15:18Z",
+ "dernier_releve": "2026-11-26T17:15:13Z",
  "fuseau": "Europe/Paris",
  "jours": [
   "2026-11-12",
@@ -36,7 +36,7 @@
    "etat": {
     "statut": "operationnel",
     "depuis": "2026-11-11T00:00:15Z",
-    "releve": "2026-11-26T17:10:56Z",
+    "releve": "2026-11-26T17:15:13Z",
     "sondes_en_echec": []
    },
    "jours": [
@@ -178,7 +178,7 @@
    "etat": {
     "statut": "operationnel",
     "depuis": "2026-11-11T00:00:15Z",
-    "releve": "2026-11-26T17:10:56Z",
+    "releve": "2026-11-26T17:15:13Z",
     "sondes_en_echec": []
    },
    "jours": [
