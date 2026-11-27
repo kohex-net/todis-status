@@ -1,6 +1,6 @@
 {
- "genere_a": "2026-11-27T23:55:26Z",
- "dernier_releve": "2026-11-27T23:55:21Z",
+ "genere_a": "2026-11-27T23:59:52Z",
+ "dernier_releve": "2026-11-27T23:59:47Z",
  "fuseau": "Europe/Paris",
  "jours": [
   "2026-11-14",
@@ -36,7 +36,7 @@
    "etat": {
     "statut": "operationnel",
     "depuis": "2026-11-13T00:00:27Z",
-    "releve": "2026-11-27T23:55:21Z",
+    "releve": "2026-11-27T23:59:47Z",
     "sondes_en_echec": []
    },
    "jours": [
@@ -157,7 +157,7 @@
      "statut": "operationnel",
      "disponibilite": 1.0,
      "minutes_panne": 0,
-     "couverture": 0.994,
+     "couverture": 0.995,
      "sondes_en_echec": []
     }
    ]
@@ -178,7 +178,7 @@
    "etat": {
     "statut": "operationnel",
     "depuis": "2026-11-13T00:00:27Z",
-    "releve": "2026-11-27T23:55:21Z",
+    "releve": "2026-11-27T23:59:47Z",
     "sondes_en_echec": []
    },
    "jours": [
@@ -299,7 +299,7 @@
      "statut": "operationnel",
      "disponibilite": 1.0,
      "minutes_panne": 0,
-     "couverture": 0.994,
+     "couverture": 0.995,
      "sondes_en_echec": []
     }
    ]
