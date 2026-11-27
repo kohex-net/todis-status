@@ -1,9 +1,8 @@
 {
- "genere_a": "2026-11-27T22:56:49Z",
- "dernier_releve": "2026-11-27T22:56:46Z",
+ "genere_a": "2026-11-27T23:00:24Z",
+ "dernier_releve": "2026-11-27T23:00:19Z",
  "fuseau": "Europe/Paris",
  "jours": [
-  "2026-11-13",
   "2026-11-14",
   "2026-11-15",
   "2026-11-16",
@@ -17,7 +16,8 @@
   "2026-11-24",
   "2026-11-25",
   "2026-11-26",
-  "2026-11-27"
+  "2026-11-27",
+  "2026-11-28"
  ],
  "plateformes": [
   {
@@ -35,19 +35,11 @@
    "disponibilite": 1.0,
    "etat": {
     "statut": "operationnel",
-    "depuis": "2026-11-12T00:00:14Z",
-    "releve": "2026-11-27T22:56:46Z",
+    "depuis": "2026-11-13T00:00:27Z",
+    "releve": "2026-11-27T23:00:19Z",
     "sondes_en_echec": []
    },
    "jours": [
-    {
-     "date": "2026-11-13",
-     "statut": "operationnel",
-     "disponibilite": 1.0,
-     "minutes_panne": 0,
-     "couverture": 1.0,
-     "sondes_en_echec": []
-    },
     {
      "date": "2026-11-14",
      "statut": "operationnel",
@@ -158,6 +150,14 @@
      "disponibilite": 1.0,
      "minutes_panne": 0,
      "couverture": 1.0,
+     "sondes_en_echec": []
+    },
+    {
+     "date": "2026-11-28",
+     "statut": "inconnu",
+     "disponibilite": 1.0,
+     "minutes_panne": 0,
+     "couverture": 0.083,
      "sondes_en_echec": []
     }
    ]
@@ -177,19 +177,11 @@
    "disponibilite": 1.0,
    "etat": {
     "statut": "operationnel",
-    "depuis": "2026-11-12T00:00:14Z",
-    "releve": "2026-11-27T22:56:46Z",
+    "depuis": "2026-11-13T00:00:27Z",
+    "releve": "2026-11-27T23:00:19Z",
     "sondes_en_echec": []
    },
    "jours": [
-    {
-     "date": "2026-11-13",
-     "statut": "operationnel",
-     "disponibilite": 1.0,
-     "minutes_panne": 0,
-     "couverture": 1.0,
-     "sondes_en_echec": []
-    },
     {
      "date": "2026-11-14",
      "statut": "operationnel",
@@ -300,6 +292,14 @@
      "disponibilite": 1.0,
      "minutes_panne": 0,
      "couverture": 1.0,
+     "sondes_en_echec": []
+    },
+    {
+     "date": "2026-11-28",
+     "statut": "inconnu",
+     "disponibilite": 1.0,
+     "minutes_panne": 0,
+     "couverture": 0.083,
      "sondes_en_echec": []
     }
    ]
